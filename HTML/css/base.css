@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxbox;
+
+    text-decoration: none;
+    list-style: none;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.el {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    width: 100%;
+}
+
+.el > div {
+    max-width: 1200px;
+    margin: auto;
+}

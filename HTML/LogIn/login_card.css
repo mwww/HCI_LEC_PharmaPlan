@@ -1,0 +1,22 @@
+main {
+    width: 100%;
+    /* height: calc(100vh - 68px); */
+    height: calc(100vh);
+    /* padding: 68px 0 0 0; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_card > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.login_card > div:nth-child(1) {
+    padding: 50px 100px;
+}

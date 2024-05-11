@@ -9,6 +9,7 @@ main {
     justify-content: center;
 }
 
+
 .login_card > div {
     display: flex;
     justify-content: center;
@@ -19,4 +20,10 @@ main {
 
 .login_card > div:nth-child(1) {
     padding: 50px 100px;
+}
+
+.icons > img{
+    display: flexbox;
+    flex-direction: row;
+    padding: 25px 20px 20px;
 }

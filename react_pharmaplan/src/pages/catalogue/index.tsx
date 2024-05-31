@@ -4,8 +4,12 @@ import css from './.module.scss'
 
 import _card from "./card/card"
 
+import obats from "./obats.json"
+
 export default function Catalogue() {
     setTitle("Medicine")
+    console.log(obats.length);
+    
     return (
         <div className={css.cont}>
             <div>
@@ -21,6 +25,12 @@ export default function Catalogue() {
                 </ul>
             </div>
             <div>
+                {
+                    obats.map(obat => (
+                        <_card imgPath={obat.img} title={obat.title} price={obat.price}/>
+                    ))
+                }
+                {/* <_card imgPath="/assets/obat.png" title="sjdfonedsijfhuis" price={69000}/>
                 <_card imgPath="/assets/obat.png" title="Gaviscon Mint Liquid Mint Flavour" price={69000}/>
                 <_card imgPath="/assets/obat.png" title="Gaviscon Mint Liquid Mint Flavour" price={69000}/>
                 <_card imgPath="/assets/obat.png" title="Gaviscon Mint Liquid Mint Flavour" price={69000}/>
@@ -34,8 +44,7 @@ export default function Catalogue() {
                 <_card imgPath="/assets/obat.png" title="Gaviscon Mint Liquid Mint Flavour" price={69000}/>
                 <_card imgPath="/assets/obat.png" title="Gaviscon Mint Liquid Mint Flavour" price={69000}/>
                 <_card imgPath="/assets/obat.png" title="Gaviscon Mint Liquid Mint Flavour" price={69000}/>
-                <_card imgPath="/assets/obat.png" title="Gaviscon Mint Liquid Mint Flavour" price={69000}/>
-                <_card imgPath="/assets/obat.png" title="Gaviscon Mint Liquid Mint Flavour" price={69000}/>
+                <_card imgPath="/assets/obat.png" title="Gaviscon Mint Liquid Mint Flavour" price={69000}/> */}
             </div>
         </div>
     )
